@@ -1,10 +1,3 @@
-<div style="text-align: center; padding-bottom: 40px;">
-    <img src="./.github/Logo.svg" width="250px">
-    <div style="padding-top: 10px; font-size: 30px">
-        EdgeSight: Headless Player
-    </div>
-</div>
-
 # EdgeSight: Headless Player
 
 ## Introduction
