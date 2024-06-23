@@ -14,6 +14,13 @@ class API:
 
         self.headless.add_websites(self.get_websites())
 
+        @self.app.route("/", methods=["GET"])
+        def index():
+            return jsonify({
+                "status": "running",
+                "version": "1.0.0"
+            })
+
         @self.app.route("/headless", methods=["GET"])
         def get_websites():
             return jsonify(self.get_websites())
@@ -84,5 +91,5 @@ class API:
             return []
         return __websites
 
-    def run(self):
-        self.app.run()
+    def run(self, host: str = "localhost", port: int = 5000, debug: bool = False):
+        self.app.run(host=host, port=port, debug=debug)

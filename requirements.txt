@@ -3,3 +3,4 @@ pytest-playwright
 flask
 flask_cors
 flask_socketio
+guvicorn

@@ -39,8 +39,6 @@ class HeadlessPlayer:
             if self.database.connected:
                 print("[HEADLESS] Database is connected!")
                 self.get_websites_from_db()
-            
-
 
     def add_websites(self, websites: list[Website]):
         self.websites.extend(websites)
